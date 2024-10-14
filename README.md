@@ -1,5 +1,10 @@
 # React + Vite
 
+#COMP3170-lab4 
+
+It is a day planner app, allowing the user to create new tasks, mark tasks as completed, and delete tasks.
+Completed tasks are displayed in such as way that users are easily distinguishable from pending tasks.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
