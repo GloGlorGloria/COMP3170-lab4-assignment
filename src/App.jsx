@@ -41,22 +41,21 @@ function App() {
 
   function handleDelete(e, index) {
     if (e.target === e.currentTarget) {
-      return; // Prevent deletion if the outer element is clicked
+      return; 
     }
 
     if (e.target.tagName !== 'BUTTON') {
-      return; // Only proceed if the target is a button
+      return; 
     }
 
     const updatedTasks = [...tasks];
     const taskToDelete = updatedTasks[index];
 
-    // Decrease the count only if the task was not already done
     if (!taskToDelete.isDone) {
       setCount(count - 1);
     }
 
-    updatedTasks.splice(index, 1); // Remove the task from the array
+    updatedTasks.splice(index, 1);
     setTasks(updatedTasks);
     console.log("delete button clicked");
   }
